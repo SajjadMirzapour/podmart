@@ -1,13 +1,90 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  background-color: #fffbf9;
+  font-family: IranYekan;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: IranYekan;
+  src: url("../public/fonts/vazir-font-v27.2.2-Fontjo.com/Vazir-Regular.ttf");
+}
+
+@media (max-width: 768px) {
+  .head {
+    background-image: url("../public/icons/bg-pod2.jpg");
+    background-size: 100% 770px;
+    height: 770px;
+  }
+}
+
+@media (min-width: 768px) {
+  .head {
+    background-image: url("../public/icons/bg-pod.png");
+    background-size: 100% 770px;
+    height: 770px;
+  }
+}
+
+.connection {
+  background-image: url("/public/icons/connection.png"),
+    linear-gradient(-45deg, rgba(4, 40, 51, 1) 0%, rgba(5, 28, 51, 1) 100%);
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .level {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .levelimg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .attractive {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .manager {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .suitable {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .suitableimg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .connection {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
